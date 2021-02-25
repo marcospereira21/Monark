@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\jmp20\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\jmp20\\.nuget\\packages"
+    ]
+  }
+}

@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Monark.Data.Pessoa">
+    <Position X="7.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAACAgAAAQABAAAAAAEAAAAAAAAAAABAAAAAAgIAAAA=</HashCode>
+      <FileName>Pessoa.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="PessoaJuridica" />
+      <Property Name="PessoaFisica" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Notas" />
+      <Property Name="Eventos" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Monark.Data.PessoaFisica">
+    <Position X="10.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAgAAgCAQAAAAhIAAAICAIAAAAAAIAAAAAIUAEAA=</HashCode>
+      <FileName>PessoaFisica.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Tratamento" />
+      <Property Name="Conjuge" />
+      <Property Name="Endereco" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Telefones" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Monark.Data.Endereco">
+    <Position X="13.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAACAAAAAARAACIAAAAAAACAAAAAAAAAAAAAAAABAAw=</HashCode>
+      <FileName>Endereco.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Tipo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Monark.Data.Telefone">
+    <Position X="10.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAASAAAAAAAAAAAEAAAAQAAAAAAAAAABAAAAABABAAQ=</HashCode>
+      <FileName>Telefone.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Tipo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Monark.Data.Tratamento">
+    <Position X="10.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Tratamento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Monark.Data.Nota">
+    <Position X="7.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAQAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Nota.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Monark.Data.Evento">
+    <Position X="4.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACIAAAAAABAEAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Evento.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="EventoTipo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Monark.Data.PessoaJuridica">
+    <Position X="13.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAgCAAAAAAAAAAAAAAEAAIAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>PessoaJuridica.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Endereco" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Telefones" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Monark.Data.PessoaTipo" Collapsed="true">
+    <Position X="19.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PessoaTipo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Monark.Data.EventoTipo">
+    <Position X="1.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>EventoTipo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Monark.Data.Interfaces.IPessoa" Collapsed="true">
+    <Position X="19.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IPessoa.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Monark.Data.TipoEnderecoEnum">
+    <Position X="16.75" Y="7.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>TipoEnderecoEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Monark.Data.TelefoneTipoEnum">
+    <Position X="10.75" Y="1.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAggAAAA=</HashCode>
+      <FileName>TelefoneTipoEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Monark.Data.EventoTipoEnum" Collapsed="true">
+    <Position X="19.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAEAABAQAIAAAACCACAAAACAAAAAAAAGAAA=</HashCode>
+      <FileName>EventoTipoEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Monark.Data.SexoEnum" Collapsed="true">
+    <Position X="21.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SexoEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

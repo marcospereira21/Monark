@@ -1,0 +1,15 @@
+C:\Dev\Monark\MonarSystem\Monark.Data\bin\Debug\net5.0\Monark.Data.deps.json
+C:\Dev\Monark\MonarSystem\Monark.Data\bin\Debug\net5.0\Monark.Data.runtimeconfig.json
+C:\Dev\Monark\MonarSystem\Monark.Data\bin\Debug\net5.0\Monark.Data.runtimeconfig.dev.json
+C:\Dev\Monark\MonarSystem\Monark.Data\bin\Debug\net5.0\Monark.Data.dll
+C:\Dev\Monark\MonarSystem\Monark.Data\bin\Debug\net5.0\ref\Monark.Data.dll
+C:\Dev\Monark\MonarSystem\Monark.Data\bin\Debug\net5.0\Monark.Data.pdb
+C:\Dev\Monark\MonarSystem\Monark.Data\obj\Debug\net5.0\Monark.Data.csprojAssemblyReference.cache
+C:\Dev\Monark\MonarSystem\Monark.Data\obj\Debug\net5.0\Monark.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\Monark\MonarSystem\Monark.Data\obj\Debug\net5.0\Monark.Data.AssemblyInfoInputs.cache
+C:\Dev\Monark\MonarSystem\Monark.Data\obj\Debug\net5.0\Monark.Data.AssemblyInfo.cs
+C:\Dev\Monark\MonarSystem\Monark.Data\obj\Debug\net5.0\Monark.Data.csproj.CoreCompileInputs.cache
+C:\Dev\Monark\MonarSystem\Monark.Data\obj\Debug\net5.0\Monark.Data.dll
+C:\Dev\Monark\MonarSystem\Monark.Data\obj\Debug\net5.0\ref\Monark.Data.dll
+C:\Dev\Monark\MonarSystem\Monark.Data\obj\Debug\net5.0\Monark.Data.pdb
+C:\Dev\Monark\MonarSystem\Monark.Data\obj\Debug\net5.0\Monark.Data.genruntimeconfig.cache

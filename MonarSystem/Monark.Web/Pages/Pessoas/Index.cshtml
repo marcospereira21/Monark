@@ -1,0 +1,120 @@
+﻿@page
+@model Monark.Web.Pages.Pessoas.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Pesquisa</h1>
+
+@*<p>
+    <a asp-page="Create">Create New</a>
+</p>*@
+
+
+<div class="card p-1 m-1">
+    <form id="FilterForm" method="post">
+        <div class="row">
+            <div class="col-6">
+                <input type="text" asp-for="FilterNome" id="FilterNome" class="form-control" placeholder="Digite parte do nome" />
+            </div>
+            <div class="col-2">
+                <input type="text" asp-for="FilterCidade" id="FilterCidade" class="form-control" placeholder="Cidade" />
+            </div>
+            <div class="col-2">
+                <input type="submit" class="btn  btn-outline-primary form-control" value="Pesquisar" />
+            </div>
+            <div class="col-2">
+                <a class="btn  btn-outline-secondary form-control" onclick="ResetFilter()">Limpar</a>
+            </div>
+        </div>
+        
+    </form>
+</div>
+
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination m-1" id="pagination-demo" />
+</nav>
+<div>Total Encontrados <strong>@Model.RowCount</strong></div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Pessoa[0].Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pessoa[0].NomeCompleto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pessoa[0].Cidade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pessoa[0].Origem)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pessoa[0].DtAtualizacao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pessoa[0].Ativo)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Pessoa)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeCompleto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cidade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Origem)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DtAtualizacao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ativo)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+@section scripts
+{
+    <script>
+
+        $('#pagination-demo').twbsPagination({
+            totalPages: @Model.PageCount,
+            visiblePages: 10,
+            startPage: @Model.PageNum,
+            initiateStartPageClick: false,
+            prev: '<span aria-hidden="true">&laquo;</span>',
+            next: '<span aria-hidden="true">&raquo;</span>',
+            first: '<span aria-hidden="true">&laquo;&laquo;</span>',
+            last: '<span aria-hidden="true">&raquo;&raquo;</span>',
+        }).on('page', function (event, page) {
+            window.location.href = "pessoas?PageNum=" + page;
+        });
+
+        function ResetFilter() {
+            $('#FilterNome').val(null);
+            $('#FilterCidade').val(null);
+            $('#FilterForm').submit();
+        }
+
+    </script>
+}

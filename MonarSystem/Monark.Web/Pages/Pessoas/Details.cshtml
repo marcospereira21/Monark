@@ -1,0 +1,43 @@
+﻿@page
+@model Monark.Web.Pages.Pessoas.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Pessoa</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Pessoa.Codigo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Pessoa.Codigo)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Pessoa.Origem)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Pessoa.Origem)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Pessoa.DtAtualizacao)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Pessoa.DtAtualizacao)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Pessoa.Ativo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Pessoa.Ativo)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Pessoa.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
